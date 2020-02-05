@@ -1,0 +1,48 @@
+.wrap{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    
+}
+.homebotan{
+    width: 250px;
+    height: 50px;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 10px;
+    font-family: 'Merienda', cursive;
+}
+
+
+.desigin_img{
+    display: inline-block;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-left: 300px; 
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+
+.CDdesigin_img{
+    display: inline-block;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-left: 500px; 
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+
+.banardesigin_img{
+    display: inline-block;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-left: 500px; 
+    margin-bottom: 150px;
+    margin-top: 50px;
+}

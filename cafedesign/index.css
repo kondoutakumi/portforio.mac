@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 2000px;
+    background-color: wheat;
+    margin: 0 auto;
+    background-image: url("img/download-1.jpg");
+    margin-right: auto;
+    margin-left : auto;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+}
+/*ヘッダーのバナー*/
+
+
+.flex ul li {
+    width: 208px;
+    height:50px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    background-color:burlywood ;
+    float: left;
+    line-height: 40px;
+    list-style: none; 
+    
+}
+
+
+
+figure {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+
+.Menu ul li {
+    display: inline-block;
+    border: 1px solid  burlywood;
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    background-color: white;
+}
+
+
+
+.Menufood1 a img {
+    border: 2px solid white;
+letter-spacing: -0.4em;
+text-align: center;
+    
+}
+
+.Menufood1 a:hover img {
+    border: 2px solid red;
+}
+
+.Menufood1 {
+    margin-bottom: 20px;
+   
+    display: flex;
+    
+}
+
+.Menufood2 a img {
+    border: 2px solid white
+}
+
+.Menufood2 a:hover img {
+    border: 2px solid red;
+}
+
+.Menufood2 {
+    margin-bottom: 20px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.Menucafe1 a img {
+    border: 2px solid white
+}
+
+.Menucafe1 a:hover img {
+    border: 2px solid red;
+}
+
+.Menucafe2 {
+    margin-bottom: 20px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.Menucafe2 a img {
+    border: 2px solid white
+}
+
+.Menucafe2 a:hover img {
+    border: 2px solid red;
+}
+
+.Menunight1 {
+    margin-bottom: 20px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.Menunight1 a img {
+    border: 2px solid white
+}
+
+.Menunight1 a:hover img {
+    border: 2px solid red;
+}
+
+.Menunight2 {
+    margin-bottom: 20px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.Menunight2 a img {
+    border: 2px solid white
+}
+
+.Menunight2 a:hover img {
+    border: 2px solid red;
+}
+
+
+
+.concept p {
+    text-align: center;
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 30px 100px;
+    border: 1px solid black;
+    background-color: #f5f5f5;
+    line-height: 70px;
+    
+}
+
+.LOGO figure {
+    text-align: center;
+}
+
+.Menu {
+    text-align: center;
+    margin: 70px;
+    
+}
+.Menu li{
+    margin: 0 auto;
+}
+
+.text{
+    margin: 20px;
+}
+
+
+.text ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+/*文字の位置固定*/
+.CAMPAIGN{
+    margin: 20px;
+}
+
+
+.CAMPAIGN p {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    -ms-transform;
+    -webkit-transform: translate(-40%, -40%);
+    transform: translate(-47%, -34%);
+    line-height: 80px;
+    letter-spacing: 0.3em;
+    font-size: 14px;
+    letter-spacing: -3px;
+    /*文字の装飾は省略*/
+}
+
+.example img {
+    width: 100%;
+}
+
+/*テキストにボックスを付けた*/
+
+.text {
+    width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 5px 100px;
+    border: 1px solid black;
+    background-color: #f5f5f5;
+    line-height: 50px;
+
+}
+
+/*ボタン*/
+
+.botan p {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;
+    /*ボタン色*/
+    color: yellow;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+
+}
+
+.botan:active p {
+    /*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    /*下に動く*/
+    border-bottom: none;
+    /*線を消す*/
+}
+
+/*sliderのアニメーションを指定*/
+
+/*アニメーションの開始位置を指定*/
+
+@keyframes slider {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    /*アニメーションの終了位置を指定*/
+    /*画像10枚分のwidthをスライドさせ、開始の画像が4枚表示された時にリピート開始*/
+    100% {
+        top: 0px;
+        left: -2500px;
+    }
+}
+
+.sliderBox {
+    /*スライダーの枠を設定する*/
+    /*幅を画像4枚分のwidthに指定することでループする際にコマ切れをなくす(変なところでループする)*/
+    width: 1000px;
+    /*表示したい画像の高さ*/
+    height: 165px;
+    border: 1px solid #000;
+
+    /*ボックスからはみ出た画像は表示されない*/
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+
+
+    /*中央寄せ*/
+    left: 50%;
+    margin-left: -500px;
+
+}
+
+.sliderBox ul {
+    /*画像13枚分の長さ*/
+    width: 3500px;
+    height: 165px;
+    list-style-type: none;
+    /*ボックスを親に設定した位置にするため(要素の位置を動かすためにpositionを設定＝スライドさせるため)*/
+    position: absolute;
+    animation-name: slider;
+    /*再生秒数を指定(スライドする速さに影響)*/
+    animation-duration: 25s;
+    /*無限ループ再生*/
+    animation-iteration-count: infinite;
+    /*速度を均一にする*/
+    animation-timing-function: linear;
+}
+
+/*float:leftで並んだ13枚の画像幅は250px*13=3500px*/
+
+.sliderBox ul li {
+    float: left;
+}
+
+h1 {
+    text-align: center;
+   
+}
+
+h2 {
+    text-align: center;
+}
+
+
+footer{
+position: fixed;
+bottom: 0;
+width:100%;
+height: 80px;
+background-color: white;
+border: 1px solid black; 
+}
+footer p{
+    color: black;
+    text-align: center;
+    height: 20px;
+    background-color: white;
+    text-align: center; 
+    margin: 0 auto;
+}
+.footerlogo{
+display: inline-block;
+    text-align: center;
+}
+
+.kozinfood{
+    
+}
+.goods{
+    width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 5px 100px;
+    border: 1px solid black;
+    background-color: #f5f5f5;
+    line-height: 150px;
+}
+.goodstitle{
+    color:burlywood;
+    margin: 40px;
+}
+.goodstitle h1{
+margin: 90px;    
+}
+
+.menuwrap{
+    width: 100%;
+    height: 2600px;
+    
+}
+.shopimg{
+    
+}
+.Shopflex{
+    margin: 70px;
+}
+.foodmenu p{
+width: 500px;
+height: 30px;
+background-color: burlywood;
+color: white;
+margin: 0 auto;
+    text-align: center;
+}
+.foodmenu3 {
+width: 700px;
+height: 100px;
+background-color: burlywood;
+color: white;
+margin: 0 auto;
+    text-align: center;
+}
+.kozinfood{
+    margin: 30px;
+}
